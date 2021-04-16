@@ -7,6 +7,7 @@ Relies on [mdx-deck](https://github.com/jxnblk/mdx-deck) presentation toolkit.
 ## Run locally
 
 ```sh
+nvm install
 npm i
 cd talks/[talk]
 npm start
