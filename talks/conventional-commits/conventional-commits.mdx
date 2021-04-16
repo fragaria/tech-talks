@@ -1,0 +1,274 @@
+import { default as fragaria } from "@tech-talks/common/theme"
+import BaseLayout from "@tech-talks/common/layouts/BaseLayout"
+import IntroLayout from "@tech-talks/common/layouts/IntroLayout"
+
+import clutter from "./clutter.png";
+import ordered from "./ordered.png";
+
+export const theme = fragaria
+
+<Head>
+  <title>Conventional commits | Fragaria tech talks</title>
+  <link rel="preload" href="https://res.cloudinary.com/fragaria/raw/upload/v1534234755/fragaria.cz/fonts/AndulkaTextPro.woff" as="font" type="font/woff" crossorigin />
+  <link rel="preload" href="https://res.cloudinary.com/fragaria/raw/upload/v1534234755/fragaria.cz/fonts/AndulkaTextPro-Italic.woff" as="font" type="font/woff" crossorigin />
+  <link rel="preload" href="https://res.cloudinary.com/fragaria/raw/upload/v1534234755/fragaria.cz/fonts/TriviaGroteskN2-Bold.woff" as="font" type="font/woff" crossorigin />
+</Head>
+
+<IntroLayout author="Filip Vařecha">
+
+# Conventional commits
+
+</IntroLayout>
+
+---
+
+<BaseLayout>
+
+## What?
+
+
+A [specification](https://www.conventionalcommits.org/) for adding human and machine readable meaning to commit messages.
+
+<div style={{
+  display: "flex",
+  flexDirection: "column",
+  width: "100%",
+}}>
+<div style={{height: "40vh", width: "100%", overflow: "hidden"}}>
+<h3 style={{marginTop: 0}}>Turn this:</h3>
+<Image src={clutter} />
+</div>
+
+<div style={{height: "40vh", width: "100%", overflow: "hidden"}}>
+<h3>... into this:</h3>
+
+<Image src={ordered} />
+</div>
+</div>
+
+</BaseLayout>
+
+---
+
+<BaseLayout>
+
+## Motivation
+
+
+<ol>
+
+<Steps>
+
+<li>Assemble messages in an unified manner.</li>
+<li>More focused commits: avoid tons of unrelated changes in a single batch.</li>
+<li>Categorize changes.</li>
+
+</Steps>
+
+</ol>
+
+</BaseLayout>
+
+---
+
+<BaseLayout>
+
+## Benefits
+
+<Steps>
+
+<div>
+
+### Can be easily enforced
+
+Lint your commit messages in the same fashion you lint your code.
+
+</div>
+
+<div>
+
+### Easier to contribute
+
+Less guesswork means the chances to maintain your Git history consistent are bigger.
+
+</div>
+
+<div>
+
+### Machine-readable out of the box
+
+- Create version bumps automatically.
+- Generate changelogs.
+- Trigger CI/CD processes according to nature of the change.
+
+</div>
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<BaseLayout centered={true} vCentered={true} showSlideCounter={false} inverted={true}>
+
+# The standard
+
+</BaseLayout>
+
+---
+
+<BaseLayout>
+
+## Commit structure
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer]
+```
+
+- `type`: Define change categories.
+- `scope`: Specify which part of the app was modified.
+- `description`: A short description.
+- `body`: *Optional*. A more through description. Should contain `BREAKING CHANGE` memo if this modifies external APIs.
+- `footer`: *Optional*. Useful for tagging, mentioning related issues and so on.
+
+</BaseLayout>
+
+---
+
+<BaseLayout>
+
+## Commit types
+
+Essential for categorization. Base spec requires `fix` and `feat`. However, [there are usually more](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) categories used.
+
+- `build`: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm).
+- `ci`: Changes to CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs).
+- `docs`: Documentation only changes.
+- `feat`: A new feature.
+- `fix`: A bug fix.
+- `perf`: A code change that improves performance.
+- `refactor`: A code change that neither fixes a bug nor adds a feature.
+- `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc).
+- `test`: Adding missing tests or correcting existing tests.
+
+</BaseLayout>
+
+---
+
+<BaseLayout centered={true} vCentered={true} showSlideCounter={false} inverted={true}>
+
+# Examples
+
+</BaseLayout>
+
+---
+
+<BaseLayout vCentered={true}>
+
+## Breaking change
+
+```
+feat: allow provided config object to extend other configs
+
+BREAKING CHANGE: `extends` key in config file is now used for extending other config files
+```
+
+Will bump the major version once new release is issued when using Standard Version.
+
+</BaseLayout>
+
+---
+
+<BaseLayout>
+
+## No body
+
+```
+docs: correct spelling of CHANGELOG
+```
+
+- Not really different from what most people use.
+- There doesn't have to be much overhead added.
+
+</BaseLayout>
+
+---
+
+<BaseLayout>
+
+## Scope use
+
+```
+feat(lang): added polish language
+```
+
+Helps readers to locate where changes occured. Specifying allowed scopes is up to the repository manager.
+
+</BaseLayout>
+
+---
+
+<BaseLayout>
+
+## Issue reference
+
+```
+fix: minor typos in code
+
+see the issue for details on the typos fixed
+
+fixes issue #12
+```
+
+References can be parsed by CI/CD. Think issue auto-close, deployment triggers etc.
+
+</BaseLayout>
+
+---
+
+<BaseLayout>
+
+## Tools
+
+<Steps>
+
+<div>
+
+### [Commitlint](https://github.com/conventional-changelog/commitlint)
+
+Check if the commit message meets the conventional commit standard.
+
+</div>
+
+<div>
+
+### [Commitizen CLI](https://github.com/commitizen/cz-cli)
+
+A CLI utility which helps you to assemble proper commit message. Can be easily configured to follow conventional commit standard.
+
+</div>
+
+<div>
+
+### [Standard Version](https://github.com/conventional-changelog/standard-version)
+
+Generates `CHANGELOG` and also bumps versions (in `package.json` etc.) according to what changed from the last release. Clever enough to cover whole semver as it recognizes feature/fix/breaking change.
+
+</div>
+
+</Steps>
+
+</BaseLayout>
+
+
+---
+
+<BaseLayout centered={true} vCentered={true} showSlideCounter={false} inverted={true}>
+
+# Thanks!
+
+</BaseLayout>

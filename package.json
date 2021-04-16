@@ -1,0 +1,31 @@
+{
+  "name": "tech-talks",
+  "version": "1.0.0",
+  "description": "Tech talks presentations by Fragaria crew",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fragaria/tech-talks.git"
+  },
+  "keywords": [
+    "tech",
+    "talk",
+    "presentation",
+    "lightning",
+    "fragaria",
+    "developer"
+  ],
+  "author": "Fragaria s.r.o.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fragaria/tech-talks/issues"
+  },
+  "homepage": "https://github.com/fragaria/tech-talks#readme",
+  "workspaces": [
+    "./common",
+    "./talks/*"
+  ]
+}

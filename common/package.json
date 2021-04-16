@@ -1,0 +1,14 @@
+{
+    "name": "@tech-talks/common",
+    "version": "1.0.0",
+    "description": "Common stuff",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Filip Vařecha",
+    "license": "MIT",
+    "devDependencies": {
+      "mdx-deck": "^4.1.1"
+    }
+  }
