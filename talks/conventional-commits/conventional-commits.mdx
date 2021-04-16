@@ -1,9 +1,12 @@
-import { default as fragaria } from "@tech-talks/common/theme"
-import BaseLayout from "@tech-talks/common/layouts/BaseLayout"
-import IntroLayout from "@tech-talks/common/layouts/IntroLayout"
+import { Box, Text } from "theme-ui";
+
+import { default as fragaria } from "@tech-talks/common/theme";
+import BaseLayout from "@tech-talks/common/layouts/BaseLayout";
+import IntroLayout from "@tech-talks/common/layouts/IntroLayout";
 
 import clutter from "./clutter.png";
 import ordered from "./ordered.png";
+import commitizen from "./commitizen.png";
 
 export const theme = fragaria
 
@@ -89,17 +92,17 @@ Lint your commit messages in the same fashion you lint your code.
 
 ### Easier to contribute
 
-Less guesswork means the chances to maintain your Git history consistent are bigger.
+Less guesswork means the chances to maintain your Git history perfectly readable are bigger.
 
 </div>
 
 <div>
 
-### Machine-readable out of the box
+### Machine-readable
 
 - Create version bumps automatically.
 - Generate changelogs.
-- Trigger CI/CD processes according to nature of the change.
+- Trigger CI/CD processes according to the nature of the change.
 
 </div>
 
@@ -143,17 +146,21 @@ Less guesswork means the chances to maintain your Git history consistent are big
 
 ## Commit types
 
-Essential for categorization. Base spec requires `fix` and `feat`. However, [there are usually more](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) categories used.
+Essential for categorization. Base spec requires `fix` and `feat`. However, [more categories](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) are usually used.
 
-- `build`: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm).
-- `ci`: Changes to CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs).
-- `docs`: Documentation only changes.
-- `feat`: A new feature.
-- `fix`: A bug fix.
-- `perf`: A code change that improves performance.
-- `refactor`: A code change that neither fixes a bug nor adds a feature.
-- `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc).
-- `test`: Adding missing tests or correcting existing tests.
+<Box bg="gray700" p={2}>
+
+- <Text color="primary" variant="code" as="span">build</Text>: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm).
+- <Text color="primary" variant="code" as="span">ci</Text>: Changes to CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs).
+- <Text color="primary" variant="code" as="span">docs</Text>: Documentation only changes.
+- <Text color="primary" variant="code" as="span">feat</Text>: A new feature.
+- <Text color="primary" variant="code" as="span">fix</Text>: A bug fix.
+- <Text color="primary" variant="code" as="span">perf</Text>: A code change that improves performance.
+- <Text color="primary" variant="code" as="span">refactor</Text>: A code change that neither fixes a bug nor adds a feature.
+- <Text color="primary" variant="code" as="span">style</Text>: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc).
+- <Text color="primary" variant="code" as="span">test</Text>: Adding missing tests or correcting existing tests.
+
+</Box>
 
 </BaseLayout>
 
@@ -250,6 +257,7 @@ Check if the commit message meets the conventional commit standard.
 
 A CLI utility which helps you to assemble proper commit message. Can be easily configured to follow conventional commit standard.
 
+
 </div>
 
 <div>
@@ -264,6 +272,15 @@ Generates `CHANGELOG` and also bumps versions (in `package.json` etc.) according
 
 </BaseLayout>
 
+---
+
+<BaseLayout>
+
+## Commitizen
+
+<Image src={commitizen} style={{backgroundSize: "contain", height: "50vh"}} />
+
+</BaseLayout>
 
 ---
 

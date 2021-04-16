@@ -6,6 +6,7 @@ export default {
     text: "black",
     background: "white",
     primary: "#ea272e",
+    gray700: "#efefef",
   },
   styles: {
     Slide: {
@@ -54,9 +55,10 @@ export default {
   fontWeights: {
     body: 400,
     heading: 700,
+  },
+  text: {
+    code: {
+      fontFamily: "monospace",
+    }
   }
-  // fonts: {
-  //   body: "Roboto, sans-serif",
-  //   monospace: '"Roboto Mono", monospace',
-  // },
 };
