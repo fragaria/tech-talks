@@ -13,39 +13,15 @@ cd talks/[talk]
 npm start
 ```
 
-## Add new presentation
+## Bootstrap new presentation
 
-Create new folder:
+Use the embeded generator. Just run:
 
 ```sh
-cd talks
-mkdir [talk]
-npm init
+npm run new-talk
 ```
 
-Then, add `mdx-deck` to `devDependencies`. Create your `.mdx` file and provide start
-script in `npm` scripts. For example:
-
-
-```json
-{
-  "name": "@tech-talks/conventional-commits",
-  "version": "1.0.0",
-  "description": "Introduction to conventional commits",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "mdx-deck conventional-commits.mdx"
-  },
-  "author": "Filip Vařecha",
-  "license": "MIT",
-  "devDependencies": {
-    "mdx-deck": "^4.1.1"
-  }
-}
-```
-
-Done!
+And follow the interactive CLI. Finally, use `cd talks/[talk] && npm start`.
 
 ## Fragaria theme
 
