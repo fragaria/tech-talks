@@ -3,6 +3,8 @@ import { Box, Text } from "theme-ui";
 import { default as fragaria } from "@tech-talks/common/theme";
 import BaseLayout from "@tech-talks/common/layouts/BaseLayout";
 import IntroLayout from "@tech-talks/common/layouts/IntroLayout";
+import KeyStatementLayout from "@tech-talks/common/layouts/KeyStatementLayout";
+import FinalLayout from "@tech-talks/common/layouts/FinalLayout";
 
 import clutter from "./clutter.png";
 import ordered from "./ordered.png";
@@ -12,22 +14,16 @@ export const theme = fragaria
 
 <Head>
   <title>Conventional commits | Fragaria tech talks</title>
-  <link rel="preload" href="https://res.cloudinary.com/fragaria/raw/upload/v1534234755/fragaria.cz/fonts/AndulkaTextPro.woff" as="font" type="font/woff" crossorigin />
-  <link rel="preload" href="https://res.cloudinary.com/fragaria/raw/upload/v1534234755/fragaria.cz/fonts/AndulkaTextPro-Italic.woff" as="font" type="font/woff" crossorigin />
   <link rel="preload" href="https://res.cloudinary.com/fragaria/raw/upload/v1534234755/fragaria.cz/fonts/TriviaGroteskN2-Bold.woff" as="font" type="font/woff" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" />
 </Head>
 
-<IntroLayout author="Filip Vařecha">
-
-# Conventional commits
-
-</IntroLayout>
+<IntroLayout author="Filip Vařecha">Conventional commits</IntroLayout>
 
 ---
 
-<BaseLayout>
-
-## What?
+<BaseLayout title="What?">
 
 
 A [specification](https://www.conventionalcommits.org/) for adding human and machine readable meaning to commit messages.
@@ -38,14 +34,17 @@ A [specification](https://www.conventionalcommits.org/) for adding human and mac
   width: "100%",
 }}>
 <div style={{height: "40vh", width: "100%", overflow: "hidden"}}>
-<h3 style={{marginTop: 0}}>Turn this:</h3>
+Turn this:
+
 <Image src={clutter} />
+
 </div>
 
-<div style={{height: "40vh", width: "100%", overflow: "hidden"}}>
-<h3>... into this:</h3>
+<div style={{height: "40vh", width: "100%", overflow: "hidden", marginTop: "1rem"}}>
+... into this:
 
 <Image src={ordered} />
+
 </div>
 </div>
 
@@ -53,10 +52,7 @@ A [specification](https://www.conventionalcommits.org/) for adding human and mac
 
 ---
 
-<BaseLayout>
-
-## Motivation
-
+<BaseLayout title="Motivation">
 
 <ol>
 
@@ -74,15 +70,13 @@ A [specification](https://www.conventionalcommits.org/) for adding human and mac
 
 ---
 
-<BaseLayout>
-
-## Benefits
+<BaseLayout title="Benefits">
 
 <Steps>
 
 <div>
 
-### Can be easily enforced
+## Can be easily enforced
 
 Lint your commit messages in the same fashion you lint your code.
 
@@ -90,7 +84,7 @@ Lint your commit messages in the same fashion you lint your code.
 
 <div>
 
-### Easier to contribute
+## Easier to contribute
 
 Less guesswork means the chances to maintain your Git history perfectly readable are bigger.
 
@@ -98,7 +92,7 @@ Less guesswork means the chances to maintain your Git history perfectly readable
 
 <div>
 
-### Machine-readable
+## Machine-readable
 
 - Create version bumps automatically.
 - Generate changelogs.
@@ -112,17 +106,15 @@ Less guesswork means the chances to maintain your Git history perfectly readable
 
 ---
 
-<BaseLayout centered={true} vCentered={true} showSlideCounter={false} inverted={true}>
+<KeyStatementLayout>
 
 # The standard
 
-</BaseLayout>
+</KeyStatementLayout>
 
 ---
 
-<BaseLayout>
-
-## Commit structure
+<BaseLayout title="Commit structure">
 
 ```
 <type>[optional scope]: <description>
@@ -142,9 +134,7 @@ Less guesswork means the chances to maintain your Git history perfectly readable
 
 ---
 
-<BaseLayout>
-
-## Commit types
+<BaseLayout title="Commit types">
 
 Essential for categorization. Base spec requires `fix` and `feat`. However, [more categories](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional) are usually used.
 
@@ -166,17 +156,15 @@ Essential for categorization. Base spec requires `fix` and `feat`. However, [mor
 
 ---
 
-<BaseLayout centered={true} vCentered={true} showSlideCounter={false} inverted={true}>
+<KeyStatementLayout>
 
 # Examples
 
-</BaseLayout>
+</KeyStatementLayout>
 
 ---
 
-<BaseLayout vCentered={true}>
-
-## Breaking change
+<BaseLayout title="Breaking change">
 
 ```
 feat: allow provided config object to extend other configs
@@ -190,9 +178,7 @@ Will bump the major version once new release is issued when using Standard Versi
 
 ---
 
-<BaseLayout>
-
-## No body
+<BaseLayout title="No body">
 
 ```
 docs: correct spelling of CHANGELOG
@@ -205,9 +191,7 @@ docs: correct spelling of CHANGELOG
 
 ---
 
-<BaseLayout>
-
-## Scope use
+<BaseLayout title="Scope use">
 
 ```
 feat(lang): added polish language
@@ -219,9 +203,7 @@ Helps readers to locate where changes occured. Specifying allowed scopes is up t
 
 ---
 
-<BaseLayout>
-
-## Issue reference
+<BaseLayout title="Issue reference">
 
 ```
 fix: minor typos in code
@@ -237,9 +219,7 @@ References can be parsed by CI/CD. Think issue auto-close, deployment triggers e
 
 ---
 
-<BaseLayout>
-
-## Tools
+<BaseLayout title="Tools">
 
 <Steps>
 
@@ -274,9 +254,7 @@ Generates `CHANGELOG` and also bumps versions (in `package.json` etc.) according
 
 ---
 
-<BaseLayout>
-
-## Commitizen
+<BaseLayout title="Commitizen">
 
 <Image src={commitizen} style={{backgroundSize: "contain", height: "50vh"}} />
 
@@ -284,8 +262,10 @@ Generates `CHANGELOG` and also bumps versions (in `package.json` etc.) according
 
 ---
 
-<BaseLayout centered={true} vCentered={true} showSlideCounter={false} inverted={true}>
+<FinalLayout>
 
-# Thanks!
+That's it!
 
-</BaseLayout>
+Thanks for your time.
+
+</FinalLayout>

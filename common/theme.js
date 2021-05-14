@@ -6,23 +6,29 @@ export default {
     text: "black",
     background: "white",
     primary: "#ea272e",
-    gray700: "#efefef",
+    gray700: "#d3d3d3",
   },
   styles: {
     Slide: {
-      padding: '0',
+      padding: "2rem",
+      height: "100%",
+    },
+    body: {
+      fontSize: 16,
     },
     h1: {
       mt: 0,
-      fontSize: 96,
+      fontSize: 62,
     },
     h2: {
-      mt: 0,
-      fontSize: 64,
-      color: "primary",
+      mt: "0.8em",
+      mb: "1rem",
+      fontSize: 42,
     },
     h3: {
+      mt: "0.8em",
       mb: "1rem",
+      fontSize: 32,
     },
     p: {
       my: "1rem",
@@ -35,6 +41,9 @@ export default {
     ol: {
       my: "1rem",
       lineHeight: "1.4em",
+    },
+    li: {
+      my: "1.4rem",
     },
     a: {
       color: "primary",
@@ -49,7 +58,7 @@ export default {
     }
   },
   fonts: {
-    body: "'Andulka Text Pro', Georgia, Palatino, serif",
+    body: "'Fira Sans', sans-serif",
     heading: "'Trivia Grotesk N2', Helvetica, Arial, sans-serif",
   },
   fontWeights: {

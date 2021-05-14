@@ -1,40 +1,35 @@
 /** @jsx jsx */
 import { jsx } from "theme-ui";
-import React from "react";
-import { useDeck } from "mdx-deck";
 
-const Layout = ({ children, centered = false, vCentered = true, showSlideCounter = true, inverted = false }) => {
-  const state = useDeck();
-  const currentSlide = state.index + 1;
+import SlideHeader from "../SlideHeader";
 
+const Layout = ({ title, centered = false, vCentered = false, inverted = false, children }) => {
   return (
     <div
-      style={{
+      sx={{
         width: "100%",
         height: "100%",
-        padding: "2rem",
         overflow: "hidden",
         display: "flex",
+        alignItems: "start",
         flexDirection: "column",
+        justifyContent: "flex-start",
       }}
-      sx={
-        inverted ? {
-          color: "#fff",
-          backgroundColor: "primary",
-        } : {}
-      }
     >
+      <SlideHeader />
+      <span sx={{
+        borderBottomColor: "primary",
+        borderBottomWidth: "6px",
+        borderBottomStyle: "solid",
+        fontFamily: "heading",
+        fontSize: 48,
+        mb: "1rem",
+      }}>{title}</span>
       <div style={{flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: vCentered ? "center" : "start"}}>
         <div style={{textAlign: centered ? "center": "left"}}>
           {children}
         </div>
       </div>
-      {showSlideCounter && (
-        <footer style={{textAlign: "right"}}>
-          <span>{currentSlide}</span>
-        </footer>
-        )
-      }
     </div>
   );
 };

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1286" height="652" viewBox="0 0 1286 652">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ed2023;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #fff;
+        opacity: 0.114;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2" data-name="Rectangle 2" class="cls-1" width="1286" height="652" transform="translate(251.963 341.282)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1" data-name="Mask Group 1" class="cls-2" transform="translate(-251.963 -341.282)">
+    <rect id="Rectangle_81" data-name="Rectangle 81" class="cls-1" width="1286" height="652" transform="translate(251.963 341.282)"/>
+    <g id="Group_10" data-name="Group 10" transform="translate(1161 -364.718)">
+      <rect id="Rectangle_70" data-name="Rectangle 70" class="cls-3" width="100" height="100" transform="translate(383.252 364.718) rotate(45)"/>
+      <rect id="Rectangle_71" data-name="Rectangle 71" class="cls-3" width="100" height="100" transform="translate(226.981 520.988) rotate(45)"/>
+      <rect id="Rectangle_72" data-name="Rectangle 72" class="cls-3" width="100" height="100" transform="translate(304.763 443.206) rotate(45)"/>
+      <rect id="Rectangle_73" data-name="Rectangle 73" class="cls-3" width="100" height="100" transform="translate(70.711 677.259) rotate(45)"/>
+      <rect id="Rectangle_74" data-name="Rectangle 74" class="cls-3" width="100" height="100" transform="translate(148.493 599.477) rotate(45)"/>
+      <rect id="Rectangle_75" data-name="Rectangle 75" class="cls-3" width="100" height="100" transform="translate(0 435.428) rotate(-45)"/>
+      <rect id="Rectangle_76" data-name="Rectangle 76" class="cls-3" width="100" height="100" transform="translate(156.271 591.699) rotate(-45)"/>
+      <rect id="Rectangle_77" data-name="Rectangle 77" class="cls-3" width="100" height="100" transform="translate(78.489 513.917) rotate(-45)"/>
+      <rect id="Rectangle_78" data-name="Rectangle 78" class="cls-3" width="100" height="100" transform="translate(312.542 747.969) rotate(-45)"/>
+      <rect id="Rectangle_79" data-name="Rectangle 79" class="cls-3" width="100" height="100" transform="translate(234.76 670.188) rotate(-45)"/>
+      <rect id="Rectangle_32" data-name="Rectangle 32" class="cls-3" width="100" height="100" transform="translate(434.294 1159.861) rotate(45)"/>
+      <rect id="Rectangle_33" data-name="Rectangle 33" class="cls-3" width="100" height="100" transform="translate(354.391 1079.958) rotate(45)"/>
+      <rect id="Rectangle_34" data-name="Rectangle 34" class="cls-3" width="100" height="100" transform="translate(432.173 1002.176) rotate(45)"/>
+      <rect id="Rectangle_35" data-name="Rectangle 35" class="cls-3" width="100" height="100" transform="translate(512.076 1082.079) rotate(45)"/>
+      <rect id="Rectangle_36" data-name="Rectangle 36" class="cls-3" width="100" height="100" transform="translate(434.294 1159.861) rotate(45)"/>
+      <rect id="Rectangle_37" data-name="Rectangle 37" class="cls-3" width="100" height="100" transform="translate(432.173 1002.176) rotate(45)"/>
+      <rect id="Rectangle_38" data-name="Rectangle 38" class="cls-3" width="100" height="100" transform="translate(278.023 1316.132) rotate(45)"/>
+      <rect id="Rectangle_39" data-name="Rectangle 39" class="cls-3" width="100" height="100" transform="translate(198.121 1236.229) rotate(45)"/>
+      <rect id="Rectangle_40" data-name="Rectangle 40" class="cls-3" width="100" height="100" transform="translate(275.902 1158.447) rotate(45)"/>
+      <rect id="Rectangle_41" data-name="Rectangle 41" class="cls-3" width="100" height="100" transform="translate(355.805 1238.35) rotate(45)"/>
+      <rect id="Rectangle_42" data-name="Rectangle 42" class="cls-3" width="100" height="100" transform="translate(278.023 1316.132) rotate(45)"/>
+      <rect id="Rectangle_43" data-name="Rectangle 43" class="cls-3" width="100" height="100" transform="translate(275.902 1158.447) rotate(45)"/>
+      <rect id="Rectangle_44" data-name="Rectangle 44" class="cls-3" width="100" height="100" transform="translate(121.753 1472.402) rotate(45)"/>
+      <rect id="Rectangle_45" data-name="Rectangle 45" class="cls-3" width="100" height="100" transform="translate(41.85 1392.499) rotate(45)"/>
+      <rect id="Rectangle_46" data-name="Rectangle 46" class="cls-3" width="100" height="100" transform="translate(119.632 1314.718) rotate(45)"/>
+      <rect id="Rectangle_47" data-name="Rectangle 47" class="cls-3" width="100" height="100" transform="translate(199.535 1394.621) rotate(45)"/>
+      <rect id="Rectangle_48" data-name="Rectangle 48" class="cls-3" width="100" height="100" transform="translate(121.753 1472.402) rotate(45)"/>
+      <rect id="Rectangle_49" data-name="Rectangle 49" class="cls-3" width="100" height="100" transform="translate(119.632 1314.718) rotate(45)"/>
+      <rect id="Rectangle_51" data-name="Rectangle 51" class="cls-3" width="100" height="100" transform="translate(-474.037 798.229) rotate(45)"/>
+      <rect id="Rectangle_60" data-name="Rectangle 60" class="cls-3" width="100" height="100" transform="translate(-777.748 1034.718) rotate(45)"/>
+      <rect id="Rectangle_61" data-name="Rectangle 61" class="cls-3" width="100" height="100" transform="translate(-934.019 1190.988) rotate(45)"/>
+      <rect id="Rectangle_62" data-name="Rectangle 62" class="cls-3" width="100" height="100" transform="translate(-856.237 1113.206) rotate(45)"/>
+      <rect id="Rectangle_63" data-name="Rectangle 63" class="cls-3" width="100" height="100" transform="translate(-1090.289 1347.259) rotate(45)"/>
+      <rect id="Rectangle_64" data-name="Rectangle 64" class="cls-3" width="100" height="100" transform="translate(-1012.507 1269.477) rotate(45)"/>
+      <rect id="Rectangle_65" data-name="Rectangle 65" class="cls-3" width="100" height="100" transform="translate(-1161 1105.428) rotate(-45)"/>
+      <rect id="Rectangle_66" data-name="Rectangle 66" class="cls-3" width="100" height="100" transform="translate(-1004.729 1261.699) rotate(-45)"/>
+      <rect id="Rectangle_67" data-name="Rectangle 67" class="cls-3" width="100" height="100" transform="translate(-1082.511 1183.917) rotate(-45)"/>
+      <rect id="Rectangle_68" data-name="Rectangle 68" class="cls-3" width="100" height="100" transform="translate(-848.458 1417.969) rotate(-45)"/>
+      <rect id="Rectangle_69" data-name="Rectangle 69" class="cls-3" width="100" height="100" transform="translate(-926.24 1340.188) rotate(-45)"/>
+      <rect id="Rectangle_80" data-name="Rectangle 80" class="cls-3" width="100" height="100" transform="translate(-181.037 1128.056) rotate(45)"/>
+    </g>
+  </g>
+</svg>
