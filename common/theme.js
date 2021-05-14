@@ -7,6 +7,7 @@ export default {
     background: "white",
     primary: "#ea272e",
     gray700: "#d3d3d3",
+    gray900: "#eee",
   },
   styles: {
     Slide: {
@@ -48,6 +49,12 @@ export default {
     a: {
       color: "primary",
       fontFamily: "body",
+    },
+    hr: {
+      borderTopColor: "gray700",
+      borderTopWidth: "1px",
+      borderTopStyle: "solid",
+      my: "2rem",
     },
     pre: {
       background: "#efefef",

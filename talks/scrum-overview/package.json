@@ -1,0 +1,15 @@
+{
+  "name": "@tech-talks/scrum-overview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "mdx-deck scrum-overview.mdx"
+  },
+  "author": "Filip Vařecha",
+  "license": "MIT",
+  "devDependencies": {
+    "mdx-deck": "^4.1.1"
+  }
+}

@@ -1,0 +1,376 @@
+import { Box, Text } from 'theme-ui'
+
+import { default as fragaria } from "@tech-talks/common/theme";
+import BaseLayout from "@tech-talks/common/layouts/BaseLayout";
+import IntroLayout from "@tech-talks/common/layouts/IntroLayout";
+import KeyStatementLayout from "@tech-talks/common/layouts/KeyStatementLayout";
+import FinalLayout from "@tech-talks/common/layouts/FinalLayout";
+
+export const theme = fragaria
+
+import overview from "./scrumorg-overview.svg";
+
+<Head>
+  <title>Scrum overview | Fragaria tech talks</title>
+  <link rel="preload" href="https://res.cloudinary.com/fragaria/raw/upload/v1534234755/fragaria.cz/fonts/TriviaGroteskN2-Bold.woff" as="font" type="font/woff" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap" rel="stylesheet" />
+</Head>
+
+<IntroLayout author="Filip Vařecha">Scrum overview</IntroLayout>
+
+---
+
+<KeyStatementLayout>
+
+# What's this all about?
+
+A quick rundown of key Scrum concepts.
+
+</KeyStatementLayout>
+
+---
+
+<BaseLayout title="What is Scrum?">
+
+<Box bg="gray900" p={4}>
+  <i>A framework within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value.</i>
+  <br/>
+  <Text mt={4}><small>Source: The Scrum Guide</small></Text>
+</Box>
+
+<Text sx={{ fontSize: 64, mt: 5, textAlign: "center" }}>???</Text>
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="What is Scrum?">
+
+Well, just a bunch of recipes how to organize stuff to get the job done: **quick and well**.
+
+Scrum is:
+
+<Steps>
+
+- Lightweight
+- Simple to understand
+- Difficult to master
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="Basic principles">
+
+<Steps>
+
+- Knowledge comes from experience, make decisions based on what is observed.
+- **Iterative** and **incremental** - optimize predictability and control risks.
+- Combines **four formal events** for inspection and adaptation within a containing event: **the Sprint**.
+  - Daily Scrum
+  - Sprint Planning
+  - Sprint Review
+  - Sprint Retrospective
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<KeyStatementLayout>
+
+# The Three Pillars of Scrum
+
+<Steps>
+
+<ul style={{ listStyleType: "none", padding: 0 }}>
+
+<li>Transparency</li>
+<li>Inspection</li>
+<li>Adaptation</li>
+
+</ul>
+
+</Steps>
+
+</KeyStatementLayout>
+
+---
+
+<BaseLayout title="The Three Pillars of Scrum: Transparency">
+
+- Process and work must be visible to those performing the work as well as those receiving it.
+- **Transparency enables inspection**.
+
+Examples:
+
+- Everyone has to use the same language when addressing the processes.
+- Both parties has to share the same definition of what it means when something is said to be completed (~ definition of Done, Done criteria).
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="The Three Pillars of Scrum: Inspection">
+
+- Artifacts and progress towards agreed goals must be inspected frequently to detect problems as they arise.
+- Needs to be effective, shouldn't become work impediment in it's own right.
+- **Inspection enables adaptation**.
+- Worthless with no adaptation in place.
+- Scrum events are designed to provoke change.
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="The Three Pillars of Scrum: Adaptation">
+
+- If any process or resulting product **deviates outside acceptable limits**, the process being applied or the product being made **must be adjusted**.
+- The adjustment must be made as soon as possible to prevent further deviation.
+- Becomes difficult when people involved lack the necessary power to do so.
+- Scrum teams are expected to adapt quickly and frequently.
+
+</BaseLayout>
+
+---
+
+<KeyStatementLayout>
+
+# Who is who?
+
+<Steps>
+
+<ul style={{ listStyleType: "none", padding: 0 }}>
+
+<li>Scrum Master (also known as SM)</li>
+<li>Product Owner (also known as PO)</li>
+<li>Development team</li>
+
+</ul>
+
+</Steps>
+
+</KeyStatementLayout>
+
+---
+
+<BaseLayout title="Scrum Master">
+
+<Steps>
+
+- Helps others adopt Scrum.
+- Coach, Teacher, Mentor, Facilitator, Conflict Navigator
+- Unblocker (removes impediments), Process Owner, Change Agent
+- <strong>Servant leader</strong>...<br/>
+
+  <i>„The servant-leader is servant first. It begins with the natural feeling that one wants to serve. Then conscious choice brings one to aspire to lead. The best test is: do those served grow as persons? Do they, while being served, become healthier, wiser, freer, more autonomous, more likely themselves to become servants? And, what is the effect on the least privileged in society; will they benefit, or, at least, not be further deprived?“</i>
+
+</Steps>
+
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="Product Owner">
+
+<Steps>
+
+- Maximizes the product value by deciding about priorities for the development team.
+- Accountable for product backlog management:
+  - Creates/updates stories
+  - Manages priority by reordering the backlock
+- Ensures backlog items are properly ordered and clearly understood.
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="Development team">
+
+<Steps>
+
+- Responsible for the software development.
+- Create plan for individual Sprints.
+- Act as one unit, holding each other accountable as professionals.
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<KeyStatementLayout>
+
+# Events
+
+<Steps>
+
+<ul style={{ listStyleType: "none", padding: 0 }}>
+
+<li>Daily Scrum</li>
+<li>Sprint Planning</li>
+<li>Sprint Review</li>
+<li>Sprint Retrospective</li>
+
+</ul>
+
+</Steps>
+
+</KeyStatementLayout>
+
+---
+
+<BaseLayout title="Daily Scrum">
+
+<Steps>
+
+- **Held each day**. Inspect progress towards Sprint goal.
+- **Short**. Should fit 15 minute timeframe.
+- **The ultimate goal**: make sure the Sprint goal will be met. Hence, prepare plan for today's work.
+- Primarily for developers but PO and SM are welcome too.
+- Usually done in a way where people take turns and inform others about:
+  - What they finished yesterday
+  - What they will accomplish today
+  - What is blocking them
+- Not a work report! Again, the purpose is to <strong>verify we're on the right track</strong>.
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="Sprint Planning">
+
+<Steps>
+
+- **Lay out work for the next Sprint**.
+- Identify the **sprint goal** ~ why is Sprint valuable to stakeholders.
+- Through discussion, decide what exactly is assigned for the upcoming Sprint and commit to deliver.
+- Once selected, developers colaborate to decompose the product backlog items into smaller units of work (~ increments of value).
+- Usually split in multiple rounds. Two in most scenarios: **grooming** and **final planning**.
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="Sprint Review">
+
+<Steps>
+
+- **Inspect the outcome of the Sprint**.
+- Present the results of team's work to key stakeholders.
+- Review what was accomplished.
+- Collaborate on what to do next (backlog might be adjusted).
+- Shouldn't boil down to "demo" only.
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="Sprint Retrospective">
+
+<Steps>
+
+- **Analyze what went well and what didn't.**
+- Plan ways to increase quality and effectivness.
+- Review previous retrospectives and assess which decisions have been applied successfully and which haven't.
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<KeyStatementLayout>
+
+# Artifacts
+
+<Steps>
+
+<ul style={{ listStyleType: "none", padding: 0 }}>
+
+<li>Product Backlog</li>
+<li>Sprint Backlog</li>
+<li>Increment</li>
+
+</ul>
+
+</Steps>
+
+</KeyStatementLayout>
+
+---
+
+<BaseLayout title="Product Backlog">
+
+<Steps>
+
+- Ordered list of everything that will possibly be needed in the product.
+- *Single source of truth* when arguing about requirements of any changes being made.
+- *Never complete*, evolves over time as the product goals change.
+- The higher up the backlog item is, the more detailed it should be which allows for more precise effort estimates.
+- Backlog items are selected by the development team for the upcoming Sprint creating a <strong>Sprint Backlog</strong>.
+- Apart from picking items from the top of the backlog, the selection is entirely their call.
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="Sprint Backlog">
+
+<Steps>
+
+- Consists of three parts:
+  - Sprint goal (why)
+  - Set of Product Backlog items selected for the Sprint (what)
+  - Actionable plan for delivering the Increment (how)
+- Product Backlog items are broken down further into smaller units to create the actionable plan.
+- Helps visualising what needs to be done to meet the Sprint goal.
+- Frequently refined during the course of the Sprint as the picture of what needs to be done gets clearer.
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="Increment">
+
+<Steps>
+
+- The sum of all Product Backlog items completed during a Sprint.
+- Has to meet all the Done criteria at the end of the Sprint regardless of whether the Product Owner decides to release it.
+
+</Steps>
+
+</BaseLayout>
+
+---
+
+<BaseLayout title="Scrum overview">
+<img src={overview} style={{height: "100%"}} />
+</BaseLayout>
+
+---
+
+<FinalLayout>
+
+That's it!
+
+Thanks for your time.
+
+</FinalLayout>

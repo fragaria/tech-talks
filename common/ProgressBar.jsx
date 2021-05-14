@@ -9,11 +9,15 @@ const ProgressBar = ({ statement, showSlideCounter = true, children }) => {
   return (
     <div sx={{
       display: "flex",
+      alignItems: "center",
+      minHeight: "2rem",
     }}>
       {state.slides.map((slide, index) => (
         <div
           key={index}
+          onClick={() => state.setIndex(index)}
           sx={{
+            cursor: "pointer",
             width: "1rem",
             height: "1rem",
             ml: index !== 0 && "1rem",

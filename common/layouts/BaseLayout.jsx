@@ -25,10 +25,15 @@ const Layout = ({ title, centered = false, vCentered = false, inverted = false, 
         fontSize: 48,
         mb: "1rem",
       }}>{title}</span>
-      <div style={{flexGrow: 1, display: "flex", flexDirection: "column", justifyContent: vCentered ? "center" : "start"}}>
-        <div style={{textAlign: centered ? "center": "left"}}>
-          {children}
-        </div>
+      <div style={{
+        width: "100%",
+        flexGrow: 1,
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: vCentered ? "center" : "start",
+        textAlign: centered ? "center": "left"
+      }}>
+        {children}
       </div>
     </div>
   );
